@@ -1,0 +1,11 @@
+body#top
+.wrapper.row1
+ header#header.hoc.clear
+  #logo.fl_left
+   a(href='#')
+    img(src='images/logo.png', alt='logo')
+   nav#mainav.fl_right
+     ul.clear
+      - var list1= ['Home', 'Pages', 'About Us', 'Contact']
+      each item in list1
+        li= item

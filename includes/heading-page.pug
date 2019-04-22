@@ -1,0 +1,51 @@
+.row1.wrapper
+ header#header.hoc.clear.no-hoc
+  #logo.fl_left
+   a(href='#')
+    img(src='images/logo.png', alt='logo')
+  nav#mainav.fl_right
+     ul.clear.border
+      li.active
+       a(href="#") Home
+      li
+       a(href="#") Pages
+       ul
+         - var list1 = ['Character', 'Music', 'Studios', 'News', 'On Air', 'Live Concert']
+          each item, x in list1
+           li
+            a(href="#C"+ x )= item
+      li
+       a(href='#C6') About Us
+      li
+       a(href='#C6') Contact
+.bgded.overlay.inspace-30(style!="background-image:url('images/nao4.jpg');")
+
+ .hoc.clear#topbar
+   .fl_left
+    ul
+     li
+      i.fa.fa-phone 
+      |+84 123 456 789
+     li
+      i.fa.fa-envelope-o 
+      |example@gmail.com
+   .fl_right
+    ul
+     li
+      a(href="#")
+       i.fa.fa-lg.fa-home
+     li
+      a(href="#") Login
+     li
+      a(href="#C7") Register
+ article#pageintro
+  h3.heading CHARLOTTE
+  P The new anime with power character. Hope u like when watching it
+  p.font-x1.uppercase.bold P.A. Works
+  footer
+   ul.nospace.inline.pushright
+    li
+     a.btn.inverse(href='#') Access
+    li
+     a.btn.inverse(href='#') More Information
+//  End Top Background Image Wrapper 
