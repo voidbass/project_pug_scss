@@ -1,0 +1,51 @@
+// Start Live Concert 
+.wrapper.row4.bgded.overlay(style="background-image:url('images/wallpaper18.jpg')")
+ footer.hoc.clear#footer
+  .center.outspace-50
+   h2.heading#C5 Charlotte (Live concert)
+   nav
+    ul.nospace.inline.pushright.uppercase
+     li
+      a(href="#")
+       i.fa.fa-lg.fa-home
+     - var list2 = ['About', 'Contact', 'Terms', 'Privacy', 'Cookies', 'Disclaimer']
+     each items in list2
+      li
+       a(href="#C6")= items
+  hr.outspace-50
+  .group
+   .one_third.first
+    h6.heading#C6 INFORMATION
+    ul.nospace.outspace-30.linklist.contact
+     li
+      i.fa.fa-map-marker
+      address Street Name & Number, Town, Postcode/Zip
+     li
+      i.fa.fa-phone
+      |(123) 456 7890
+     li
+      i.fa.fa-fax
+      |(123) 456 7890
+     li
+      i.fa.fa-envelope-o
+      |example@email.com
+   .one_third
+    h6.heading Live concert
+    figure
+     a(href="#")
+      img.borderedbox.inspace-10.outspace-15(src="images/Yusarin2.jpg", alt="live")
+     figcation
+      h6.nospace.font-x1
+       a(href="#")
+       |Release Date:
+      time.font-xs.block.outspace-10 Friday, 27<sup>th</sup> Sep 2015
+   .one_third
+    h6.heading#C7 REGISTER EMAIL
+    p.nospace.outspace-30 Sign up to get the latest movie information.
+    form(action="#" method="post")
+     fieldset
+      legend Newsletter:
+      input.outspace-15(type="text" placeholder="Name")
+      input.outspace-15(type="text" placeholder="Email")
+      button(type='submit' value='submit') Submit
+// End Live Concert 
